@@ -1,6 +1,6 @@
 ﻿namespace ChessGameApp.Services
 {
-    public class ChressLogic
+    public class ChessLogic
     {
 
     }
