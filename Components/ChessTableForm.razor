@@ -19,96 +19,96 @@
                 </tr>
                 <tr>
                     <th>8</th>
-                    <td class="light" id="a8" @onclick=@(()=> cellPressed("a8"))>♜</td>
-                    <td class="dark" id="b8" @onclick=@(()=> cellPressed("b8"))>♞</td>
-                    <td class="light" id="c8" @onclick=@(()=> cellPressed("c8"))>♝</td>
-                    <td class="dark" id="d8" @onclick=@(()=> cellPressed("d8"))>♛</td>
-                    <td class="light" id="e8" @onclick=@(()=> cellPressed("e8"))>♚</td>
-                    <td class="dark" id="f8" @onclick=@(()=> cellPressed("f8"))>♝</td>
-                    <td class="light" id="g8" @onclick=@(()=> cellPressed("g8"))>♞</td>
-                    <td class="dark" id="h8" @onclick=@(()=> cellPressed("h8"))>♜</td>
+                    <td class="light @("a8" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "a8") ? "highlighted" : string.Empty)" id="a8" @onclick=@(()=> cellPressed("a8"))>♜</td>
+                    <td class="dark @("b8" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "b8") ? "highlighted" : string.Empty)" id="b8" @onclick=@(()=> cellPressed("b8"))>♞</td>
+                    <td class="light @("c8" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "c8") ? "highlighted" : string.Empty)" id="c8" @onclick=@(()=> cellPressed("c8"))>♝</td>
+                    <td class="dark @("d8" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "d8") ? "highlighted" : string.Empty)" id="d8" @onclick=@(()=> cellPressed("d8"))>♛</td>
+                    <td class="light @("e8" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "e8") ? "highlighted" : string.Empty)" id="e8" @onclick=@(()=> cellPressed("e8"))>♚</td>
+                    <td class="dark @("f8" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "f8") ? "highlighted" : string.Empty)" id="f8" @onclick=@(()=> cellPressed("f8"))>♝</td>
+                    <td class="light @("g8" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "g8") ? "highlighted" : string.Empty)" id="g8" @onclick=@(()=> cellPressed("g8"))>♞</td>
+                    <td class="dark @("h8" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "h8") ? "highlighted" : string.Empty)" id="h8" @onclick=@(()=> cellPressed("h8"))>♜</td>
                 </tr>
                 <tr>
                     <th>7</th>
-                    <td class="dark" id="a7" @onclick=@(()=> cellPressed("a7"))>♟</td>
-                    <td class="light" id="b7" @onclick=@(()=> cellPressed("b7"))>♟</td>
-                    <td class="dark" id="c7" @onclick=@(()=> cellPressed("c7"))>♟</td>
-                    <td class="light" id="d7" @onclick=@(()=> cellPressed("d7"))>♟</td>
-                    <td class="dark" id="e7" @onclick=@(()=> cellPressed("e7"))>♟</td>
-                    <td class="light" id="f7" @onclick=@(()=> cellPressed("f7"))>♟</td>
-                    <td class="dark" id="g7" @onclick=@(()=> cellPressed("g7"))>♟</td>
-                    <td class="light" id="h7" @onclick=@(()=> cellPressed("h7"))>♟</td>
+                    <td class="dark @("a7" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "a7") ? "highlighted" : string.Empty)" id="a7" @onclick=@(()=> cellPressed("a7"))>♟</td>
+                    <td class="light @("b7" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "b7") ? "highlighted" : string.Empty)" id="b7" @onclick=@(()=> cellPressed("b7"))>♟</td>
+                    <td class="dark @("c7" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "c7") ? "highlighted" : string.Empty)" id="c7" @onclick=@(()=> cellPressed("c7"))>♟</td>
+                    <td class="light @("d7" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "d7") ? "highlighted" : string.Empty)" id="d7" @onclick=@(()=> cellPressed("d7"))>♟</td>
+                    <td class="dark @("e7" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "e7") ? "highlighted" : string.Empty)" id="e7" @onclick=@(()=> cellPressed("e7"))>♟</td>
+                    <td class="light @("f7" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "f7") ? "highlighted" : string.Empty)" id="f7" @onclick=@(()=> cellPressed("f7"))>♟</td>
+                    <td class="dark @("g7" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "g7") ? "highlighted" : string.Empty)" id="g7" @onclick=@(()=> cellPressed("g7"))>♟</td>
+                    <td class="light @("h7" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "h7") ? "highlighted" : string.Empty)" id="h7" @onclick=@(()=> cellPressed("h7"))>♟</td>
                 </tr>
                 <tr>
                     <th>6</th>
-                    <td class="light" id="a6" @onclick=@(()=> cellPressed("a6"))></td>
-                    <td class="dark" id="b6" @onclick=@(()=> cellPressed("b6"))></td>
-                    <td class="light" id="c6" @onclick=@(()=> cellPressed("c6"))></td>
-                    <td class="dark" id="d6" @onclick=@(()=> cellPressed("d6"))></td>
-                    <td class="light" id="e6" @onclick=@(()=> cellPressed("e6"))></td>
-                    <td class="dark" id="f6" @onclick=@(()=> cellPressed("f6"))></td>
-                    <td class="light" id="g6" @onclick=@(()=> cellPressed("g6"))></td>
-                    <td class="dark" id="h6" @onclick=@(()=> cellPressed("h6"))></td>
+                    <td class="light @("a6" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "a6") ? "highlighted" : string.Empty)" id="a6" @onclick=@(()=> cellPressed("a6"))></td>
+                    <td class="dark @("b6" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "b6") ? "highlighted" : string.Empty)" id="b6" @onclick=@(()=> cellPressed("b6"))></td>
+                    <td class="light @("c6" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "c6") ? "highlighted" : string.Empty)" id="c6" @onclick=@(()=> cellPressed("c6"))></td>
+                    <td class="dark @("d6" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "d6") ? "highlighted" : string.Empty)" id="d6" @onclick=@(()=> cellPressed("d6"))></td>
+                    <td class="light @("e6" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "e6") ? "highlighted" : string.Empty)" id="e6" @onclick=@(()=> cellPressed("e6"))></td>
+                    <td class="dark @("f6" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "f6") ? "highlighted" : string.Empty)" id="f6" @onclick=@(()=> cellPressed("f6"))></td>
+                    <td class="light @("g6" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "g6") ? "highlighted" : string.Empty)" id="g6" @onclick=@(()=> cellPressed("g6"))></td>
+                    <td class="dark @("h6" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "h6") ? "highlighted" : string.Empty)" id="h6" @onclick=@(()=> cellPressed("h6"))></td>
                 </tr>
                 <tr>
                     <th>5</th>
-                    <td class="dark" id="a5" @onclick=@(()=> cellPressed("a5"))></td>
-                    <td class="light" id="b5" @onclick=@(()=> cellPressed("b5"))></td>
-                    <td class="dark" id="c5" @onclick=@(()=> cellPressed("c5"))></td>
-                    <td class="light" id="d5" @onclick=@(()=> cellPressed("d5"))></td>
-                    <td class="dark" id="e5" @onclick=@(()=> cellPressed("e5"))></td>
-                    <td class="light" id="f5" @onclick=@(()=> cellPressed("f5"))></td>
-                    <td class="dark" id="g5" @onclick=@(()=> cellPressed("g5"))></td>
-                    <td class="light" id="h5" @onclick=@(()=> cellPressed("h5"))></td>
+                    <td class="dark @("a5" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "a5") ? "highlighted" : string.Empty)" id="a5" @onclick=@(()=> cellPressed("a5"))></td>
+                    <td class="light @("b5" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "b5") ? "highlighted" : string.Empty)" id="b5" @onclick=@(()=> cellPressed("b5"))></td>
+                    <td class="dark @("c5" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "c5") ? "highlighted" : string.Empty)" id="c5" @onclick=@(()=> cellPressed("c5"))></td>
+                    <td class="light @("d5" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "d5") ? "highlighted" : string.Empty)" id="d5" @onclick=@(()=> cellPressed("d5"))></td>
+                    <td class="dark @("e5" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "e5") ? "highlighted" : string.Empty)" id="e5" @onclick=@(()=> cellPressed("e5"))></td>
+                    <td class="light @("f5" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "f5") ? "highlighted" : string.Empty)" id="f5" @onclick=@(()=> cellPressed("f5"))></td>
+                    <td class="dark @("g5" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "g5") ? "highlighted" : string.Empty)" id="g5" @onclick=@(()=> cellPressed("g5"))></td>
+                    <td class="light @("h5" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "h5") ? "highlighted" : string.Empty)" id="h5" @onclick=@(()=> cellPressed("h5"))></td>
                 </tr>
                 <tr>
                     <th>4</th>
-                    <td class="light" id="a4" @onclick=@(()=> cellPressed("a4"))></td>
-                    <td class="dark" id="b4" @onclick=@(()=> cellPressed("b4"))></td>
-                    <td class="light" id="c4" @onclick=@(()=> cellPressed("c4"))></td>
-                    <td class="dark" id="d4" @onclick=@(()=> cellPressed("d4"))></td>
-                    <td class="light" id="e4" @onclick=@(()=> cellPressed("e4"))></td>
-                    <td class="dark" id="f4" @onclick=@(()=> cellPressed("f4"))></td>
-                    <td class="light" id="g4" @onclick=@(()=> cellPressed("g4"))></td>
-                    <td class="dark" id="h4" @onclick=@(()=> cellPressed("h4"))></td>
+                    <td class="light @("a4" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "a4") ? "highlighted" : string.Empty)" id="a4" @onclick=@(()=> cellPressed("a4"))></td>
+                    <td class="dark @("b4" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "b4") ? "highlighted" : string.Empty)" id="b4" @onclick=@(()=> cellPressed("b4"))></td>
+                    <td class="light @("c4" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "c4") ? "highlighted" : string.Empty)" id="c4" @onclick=@(()=> cellPressed("c4"))></td>
+                    <td class="dark @("d4" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "d4") ? "highlighted" : string.Empty)" id="d4" @onclick=@(()=> cellPressed("d4"))></td>
+                    <td class="light @("e4" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "e4") ? "highlighted" : string.Empty)" id="e4" @onclick=@(()=> cellPressed("e4"))></td>
+                    <td class="dark @("f4" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "f4") ? "highlighted" : string.Empty)" id="f4" @onclick=@(()=> cellPressed("f4"))></td>
+                    <td class="light @("g4" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "g4") ? "highlighted" : string.Empty)" id="g4" @onclick=@(()=> cellPressed("g4"))></td>
+                    <td class="dark@("h4" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "h4") ? "highlighted" : string.Empty)" id="h4" @onclick=@(()=> cellPressed("h4"))></td>
                 </tr>
                 <tr>
                     <th>3</th>
-                    <td class="dark" id="a3" @onclick=@(()=> cellPressed("a3"))></td>
-                    <td class="light" id="b3" @onclick=@(()=> cellPressed("b3"))></td>
-                    <td class="dark" id="c3" @onclick=@(()=> cellPressed("c3"))></td>
-                    <td class="light" id="d3" @onclick=@(()=> cellPressed("d3"))></td>
-                    <td class="dark" id="e3" @onclick=@(()=> cellPressed("e3"))></td>
-                    <td class="light" id="f3" @onclick=@(()=> cellPressed("f3"))></td>
-                    <td class="dark" id="g3" @onclick=@(()=> cellPressed("g3"))></td>
-                    <td class="light" id="h3" @onclick=@(()=> cellPressed("h3"))></td>
+                    <td class="dark @("a3" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "a3") ? "highlighted" : string.Empty)" id="a3" @onclick=@(()=> cellPressed("a3"))></td>
+                    <td class="light @("b3" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "b3") ? "highlighted" : string.Empty)" id="b3" @onclick=@(()=> cellPressed("b3"))></td>
+                    <td class="dark @("c3" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "c3") ? "highlighted" : string.Empty)" id="c3" @onclick=@(()=> cellPressed("c3"))></td>
+                    <td class="light @("d3" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "d3") ? "highlighted" : string.Empty)" id="d3" @onclick=@(()=> cellPressed("d3"))></td>
+                    <td class="dark @("e3" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "e3") ? "highlighted" : string.Empty)" id="e3" @onclick=@(()=> cellPressed("e3"))></td>
+                    <td class="light @("f3" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "f3") ? "highlighted" : string.Empty)" id="f3" @onclick=@(()=> cellPressed("f3"))></td>
+                    <td class="dark @("g3" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "g3") ? "highlighted" : string.Empty)" id="g3" @onclick=@(()=> cellPressed("g3"))></td>
+                    <td class="light @("h3" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "h3") ? "highlighted" : string.Empty)" id="h3" @onclick=@(()=> cellPressed("h3"))></td>
                 </tr>
                 <tr>
                     <th>2</th>
-                    <td class="light" id="a2" @onclick=@(()=> cellPressed("a2"))>♙</td>
-                    <td class="dark" id="b2" @onclick=@(()=> cellPressed("b2"))>♙</td>
-                    <td class="light" id="c2" @onclick=@(()=> cellPressed("c2"))>♙</td>
-                    <td class="dark" id="d2" @onclick=@(()=> cellPressed("d2"))>♙</td>
-                    <td class="light" id="e2" @onclick=@(()=> cellPressed("e2"))>♙</td>
-                    <td class="dark" id="f2" @onclick=@(()=> cellPressed("f2"))>♙</td>
-                    <td class="light" id="g2" @onclick=@(()=> cellPressed("g2"))>♙</td>
-                    <td class="dark" id="h2" @onclick=@(()=> cellPressed("h2"))>♙</td>
+                    <td class="light @("a2" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "a2") ? "highlighted" : string.Empty)" id="a2" @onclick=@(()=> cellPressed("a2"))>♙</td>
+                    <td class="dark @("b2" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "b2") ? "highlighted" : string.Empty)" id="b2" @onclick=@(()=> cellPressed("b2"))>♙</td>
+                    <td class="light @("c2" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "c2") ? "highlighted" : string.Empty)" id="c2" @onclick=@(()=> cellPressed("c2"))>♙</td>
+                    <td class="dark @("d2" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "d2") ? "highlighted" : string.Empty)" id="d2" @onclick=@(()=> cellPressed("d2"))>♙</td>
+                    <td class="light @("e2" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "e2") ? "highlighted" : string.Empty)" id="e2" @onclick=@(()=> cellPressed("e2"))>♙</td>
+                    <td class="dark @("f2" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "f2") ? "highlighted" : string.Empty)" id="f2" @onclick=@(()=> cellPressed("f2"))>♙</td>
+                    <td class="light @("g2" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "g2") ? "highlighted" : string.Empty)" id="g2" @onclick=@(()=> cellPressed("g2"))>♙</td>
+                    <td class="dark  @("h2" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "h2") ? "highlighted" : string.Empty)" id="h2" @onclick=@(()=> cellPressed("h2"))>♙</td>
                 </tr>
                 <tr>
                     <th>1</th>
-                    <td class="dark" id="a1" @onclick=@(()=> cellPressed("a1"))>♖</td>
-                    <td class="light" id="b1" @onclick=@(()=> cellPressed("b1"))>♘</td>
-                    <td class="dark" id="c1" @onclick=@(()=> cellPressed("c1"))>♗</td>
-                    <td class="light" id="d1" @onclick=@(()=> cellPressed("d1"))>♕</td>
-                    <td class="dark" id="e1" @onclick=@(()=> cellPressed("e1"))>♔</td>
-                    <td class="light" id="f1" @onclick=@(()=> cellPressed("f1"))>♗</td>
-                    <td class="dark" id="g1" @onclick=@(()=> cellPressed("g1"))>♘</td>
-                    <td class="light" id="h1" @onclick=@(()=> cellPressed("h1"))>♖</td>
+                    <td class="dark @("a1" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "a1") ? "highlighted" : string.Empty)" id="a1" @onclick=@(()=> cellPressed("a1"))>♖</td>
+                    <td class="light @("b1" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "b1") ? "highlighted" : string.Empty)" id="b1" @onclick=@(()=> cellPressed("b1"))>♘</td>
+                    <td class="dark @("c1" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "c1") ? "highlighted" : string.Empty)" id="c1" @onclick=@(()=> cellPressed("c1"))>♗</td>
+                    <td class="light @("d1" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "d1") ? "highlighted" : string.Empty)" id="d1" @onclick=@(()=> cellPressed("d1"))>♕</td>
+                    <td class="dark @("e1" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "e1") ? "highlighted" : string.Empty)" id="e1" @onclick=@(()=> cellPressed("e1"))>♔</td>
+                    <td class="light @("f1" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "f1") ? "highlighted" : string.Empty)" id="f1" @onclick=@(()=> cellPressed("f1"))>♗</td>
+                    <td class="dark @("g1" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "g1") ? "highlighted" : string.Empty)" id="g1" @onclick=@(()=> cellPressed("g1"))>♘</td>
+                    <td class="light @("h1" == coordinates? "Selected" : string.Empty) @(Highlights.Any( x => x.ToString().ToLower() == "h1") ? "highlighted" : string.Empty) "  id="h1" @onclick=@(()=> cellPressed("h1"))>♖</td>
                 </tr>
             </tbody>
         </table>
 
-        
+
         </body>
 
         <style>
@@ -122,24 +122,44 @@
             .chess-board td { width: 1.5em; height: 1.5em; text-align: center; font-size: 32px; line-height: 0;}
             .chess-board .light { background: #eee; }
             .chess-board .dark { background: #aaa; }
+            .Selected {
+                background-color: red !important;
+                border:  1px solid black;
+            }
+            .highlighted{
+                background-color: green !important;
+                border:  1px solid black;
+            }
+
         </style>
 
 
 
 @code {
     public BoardChess board { get; set; } = new BoardChess();
-
-
+    public Board bor { get; set; } = new Board();
 
 
     string figure;
     string selectedFigure;
     string location2;
     string coordinates;
+
+    BoardLocation[] Highlights = new BoardLocation[] { };
+
     bool isSecondClick = false;
 
 
-    
+    public void Deselect()
+    {
+        selectedFigure = string.Empty;
+        coordinates = string.Empty;
+        location2 = string.Empty;
+        isSecondClick = false;
+        Highlights = new BoardLocation[] { };
+    }
+
+
 
     public async Task cellPressed(string location)
     {
@@ -148,28 +168,50 @@
 
             coordinates = location;
             await figureCheckInCell(location);
+
+            var orPieceIsWhite = bor.PieceIsWhite(figure);
+
+
+            if(orPieceIsWhite != board.WhitesTurn)
+            {
+                return;
+            }
+
             await cellChecking();
-            
+
 
             board.SelectedPiece = new SelectedPiece
-                {
-                    Piece = Board.GetPiece(selectedFigure),
-                    Location = Board.GetLocation(coordinates)
-                };
+                    {
+                        Piece = Board.GetPiece(selectedFigure),
+                        Location = Board.GetLocation(coordinates)
+                    };
+
+
+
             isSecondClick = true;
+
+            Highlights = Board.GetLegalMoves(board);
         }
-        else if (Board.GetLegalMoves(board).Contains(Board.GetLocation(location)))
+        else if (Highlights.Contains(Board.GetLocation(location)))
         {
-            
+
             await MakeMove(location);
 
+        }else
+        {
+            if (coordinates == location)
+            {
+                Deselect();
+
+                return;
+            }
         }
     }
 
     public async Task figureCheckInCell(string coordinates)
     {
         figure = await JsRuntime.InvokeAsync<string>("getValueById", coordinates);
-        
+
     }
 
     public async Task figureMoveInCell(string coordinates)
@@ -185,26 +227,13 @@
 
     public async Task<string> cellChecking()
     {
-        if(figure == string.Empty)
+        if (figure == string.Empty)
         {
             return string.Empty;
         }
         else
         {
             return selectedFigure = figure;
-        }
-    }
-
-
-    public async Task<string> secondClickCellChecking()
-    {
-        if (figure != string.Empty)
-        {
-            return selectedFigure = figure;
-        }
-        else
-        {
-            return string.Empty;
         }
     }
 
@@ -213,7 +242,8 @@
     {
         location2 = location;
 
-        
+
+
         await figureDeleteInCell(coordinates);
         await figureMoveInCell(location2);
 
@@ -230,10 +260,22 @@
 
         board.WhitesTurn = !board.WhitesTurn;
 
+
         board.SelectedPiece = default;
 
-        isSecondClick = false;
-    }
+        Highlights = new BoardLocation[] { };
 
-    
+        isSecondClick = false;
+
+        board.History.MakeMove(Board.GetLocation(coordinates), newLocation, board.WhitesTurn);
+
+
+        //Deselect
+        Highlights = new BoardLocation[] { };
+        isSecondClick = false;
+        coordinates = string.Empty;
+
+        }
+
+    }
 }

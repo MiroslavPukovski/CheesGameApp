@@ -9,6 +9,8 @@
         public History History { get; set; }
 
 
+
+
         public BoardChess()
         {
             History = new History();
@@ -108,6 +110,7 @@
     {
         public PieceWithColor Piece { get; init; }
         public BoardLocation Location { get; init; }
+
     }
     public enum BoardLocation
     {
@@ -136,6 +139,9 @@
         WhiteKing = 16,
         BlackKing = 6
     }
+
+
+
     public class History
     {
         public List<Move> Moves { get; set; }
@@ -146,11 +152,21 @@
         public void MakeMove(BoardLocation from, BoardLocation to, bool whitesTurn) =>
             Moves.Add(new Move { From = from, To = to, WhitesTurn = whitesTurn });
     }
+
+
+
+
     public struct Move
     {
         public bool WhitesTurn { get; set; }
         public BoardLocation From { get; set; }
         public BoardLocation To { get; set; }
+    }
+
+
+    public static class Extention
+    {
+        public static bool PieceIsWhite(this PieceWithColor piece) => (int)piece > 10;
     }
 }
 
